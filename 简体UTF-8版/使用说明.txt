@@ -1,0 +1,73 @@
+ -----------------------------------------------------------------------------
+ 插件名称：ElvesCMS－QQ登录插件
+
+ 插件作者：ElvesCMS官方
+ 
+ 插件介绍：ElvesCMS系统的QQ登录插件。
+
+                                                                
+ -----------------------------------------------------------------------------
+ 想到即可做到 － ElvesCMS
+ -----------------------------------------------------------------------------
+
+
+ ********************     安装插件     ********************
+
+ 1、将“upload”目录下的文件上传至ElvesCMS系统目录；
+
+ 2、在浏览器中执行 /core/memberconnect/qq/install/index.php 文件,依提示进行安装；
+
+ 3、提示安装完成后，删除 /core/memberconnect/qq/install/ 目录；
+
+ 4、插件安装完毕。
+
+
+
+ ********************     卸载插件     ********************
+
+ 1、将“upload/core/memberconnect/qq/install/”目录上传至服务器ElvesCMS系统/core/memberconnect/qq/目录；
+
+ 2、在浏览器中执行 /core/memberconnect/qq/install/index.php 文件,依提示进行卸载；
+
+ 3、提示卸载完成后，删除 /core/memberconnect/qq/ 目录；
+
+ 4、插件卸载完毕。
+
+
+
+ ********************     插件使用     ********************
+
+ 1、插件安装后，可登录后台>“用户”>“外部接口”>“管理外部登录接口”：里设置参数。
+    appid（应用ID）、appkey（应用密钥）需要自己到QQ官网申请。
+
+ 2、前台在要显示QQ登录链接的页面加上如下代码：
+　　<a href="[!--news.url--]core/memberconnect/?apptype=qq" target="_blank"><img src="[!--news.url--]core/memberconnect/qq/images/qqlogin.gif" border="0"></a>
+
+ 3、生成相应页面。
+
+
+
+ ********************     插件目录说明     ********************
+
+ /core/memberconnect/qq/      QQ登录插件目录
+    ├install/              插件安装/卸载文件目录
+    │├index.php            安装/卸载主文件
+    │├install.php          安装插件文件
+    │└uninstall.php        卸载插件文件
+    ├images/               图片目录
+    ├to_login.php          转向登录处理文件
+    └loginend.php          返回登录处理文件
+
+
+
+
+ ********************     ElvesCMS插件扩展教程     ********************
+
+ 以上是我们提供的插件分享，同时希望您以后也可以开发出更好的插件与大家分享。ElvesCMS的发展离不开大家的支持。
+
+
+
+
+
+
+
